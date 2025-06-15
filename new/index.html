@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+             <div class="profile-container">
+            <button class="profile" onclick="openPopup()"><img src="108568eff44a7b6b0ba7ee728f096f79.jpg" class="user-profile-img"></button> 
+            <div class="popup" id="popup">
+    <div class="profile-picture">
+      <img id="profile-img">
+      <label class="upload-btn">
+        <i class="fa-solid fa-upload" style="color: #ffffff;"></i>
+        <input type="file" id="upload-input" accept="image/*" hidden>
+      </label>
+    </div>
+    <div class="profile-details">
+        <button type="button" id="save-btn" onclick="closePopup()">Save Changes</button>
+    </div>
+            </div> 
+            </div>
+            <div class="icons">
+            <div class="pfp-container">
+              <a href="/new/index.html"><i class="fa-solid fa-user-astronaut" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="pfp-container">
+                <a href="/chatbot/index.html"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a>
+             </div>
+             <div class="pfp-container">
+                <a href="/diary/index.html"><i class="fa-solid fa-pen-nib" style="color: #ffffff;"></i></a>
+             </div>
+             <div class="pfp-container">
+              <a href="/notes/index.html"><i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i></a>
+             </div>
+            </div>
+        </div> 
+        
+        <div class="center">
+           <h2 class="header">HI PRIYANSHI!</h2>
+           <div class="essentials">
+            <div class="mood">
+                <h3>How are you feeling today?</h3>
+                <div class="mood-options">
+                    <div class="mood-option" id="happy"></div>
+                    <div class="mood-option" id="sad"></div>
+                    <div class="mood-option" id="angry"></div>
+                    <div class="mood-option" id="neutral"></div>
+                </div>
+    </div>  
+            <div id="stopwatch-container">
+                    <h1 id="myH1">StopWatch</h1>
+                    <div class="container2">
+                        <div class="display" id="display">00:00:00:00</div>
+                        <div id="controls">
+                            <button id="startBtn" onclick="start()">Start</button>
+                            <button id="stopBtn" onclick="stop()">Stop</button>
+                        </div>
+                    </div>
+
+                </div>
+            
+</div> 
+            <div class="bottom">
+            <div class="todo">
+                <h3>UPCOMING MISSIONS</h3>
+                <div class="todo-item"><i class="fa-solid fa-meteor" style="color: #ff0000;"></i>Operation: Turn ideas into magic.</div>
+                <div class="todo-item"><i class="fa-solid fa-rocket" style="color: #33ff00;"></i>Quest: Elevate every pixel to perfection.</div>
+                <div class="todo-item"><i class="fa-solid fa-shuttle-space" style="color: #00e1ff;"></i>Mission: Conquer.</div>
+            </div>
+            <div class="timer">
+            <div class="timer-container">
+               <img id="rotatable-img" src="c80e15a580455f60f6b3176bde9d98ac-removebg-preview.png"  class="timer-img"/>
+               </div>
+               <div class="buttons">
+               <a href="https://open.spotify.com/"><button id="start-btn" class="start-button">Play Spotify</button></a> 
+                 </div>
+            </div>
+        </div>
+        </div>
+        <div class="right">
+                <div class="tasks">
+                    <h3>ADD A MISSION</h3>
+                    <div class="add">
+                    <input id="inputField" type="text"><button id="addToDo" class="addToDo">+</button>
+                </div>
+                    <div class="to-dos" id="toDoContainer">
+                    </div>
+            </div>
+            <img src="04b15e0943583c1f8ec9d1e541b24d82.jpg" class="imgs"> 
+            <div class="cal">
+                <input type="date" placeholder="Calendar" class="calendar">
+            </div>
+        </div>
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>

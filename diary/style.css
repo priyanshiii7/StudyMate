@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('https://i.pinimg.com/736x/0d/9c/47/0d9c47f3fdc057bacae289b98c78494c.jpg');
+    background-repeat: repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left {
+    margin-top: 110px;
+    flex-direction: column;
+    background-color: rgb(3, 11, 29);
+    border-radius: 10px;
+    border: 2px solid rgb(63, 66, 71);
+    width: 5%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.pfp-container {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: rgb(89, 93, 100);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #000000;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.right {
+    flex-direction: column;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.topcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.title {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #1b0fbd;
+    color: #fff;
+    margin: 10px 0px 10px 10px;
+    border: none;
+}
+ 
+
+.diary-card {
+    background: rgba(0, 0, 0, 0.85); 
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    color: white;
+    height: 600px;
+    width: 600px;
+}
+
+.diary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+    border-color: rgb(255, 255, 255);
+}
+
+.diary-card .card-header {
+    background: linear-gradient(45deg, #1b0fbd, #262a4d);
+    border: none;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 0;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.image-upload-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.image-upload-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.diary-textarea {
+    border: none;  
+    font-size: 20px; 
+    padding: 20px;
+    background: transparent;
+    color: white;
+}
+
+.diary-textarea:focus {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    color: white;
+}
+
+.add-card-btn { 
+    height: 50px;
+    width: 200px; 
+    background-color:#0a0036; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px; 
+    color: rgb(255, 255, 255); 
+    transition: all 0.6s ease; 
+}
+
+.add-card-btn:hover { 
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4);
+    color: white;
+    border-color: rgb(255, 255, 255);
+}
+
+.hidden {
+    display: none;
+}

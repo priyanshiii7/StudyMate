@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body> 
+
+    <div class="container"> 
+        <div class="left">
+            <div class="pfp-container"> <a href="/new/index.html"><i class="fa-solid fa-user-astronaut" style="color: #e3f1ff;"></i></a></div>
+            <div class="pfp-container"><a href="/chatbot/index.html"><i class="fa-solid fa-comment" style="color: #e3f1ff;"></i></a></div>
+            <div class="pfp-container"><a href="/diary/index.html"><i class="fa-solid fa-pen-nib" style="color: #e3f1ff;"></i></a></div> 
+            <div class="pfp-container"> <a href="/notes/index.html"><i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i></a></div> 
+        </div>
+        <div class="right">
+         <h1>🕯️ Cozy Study Room</h1>
+  <p>Pick a vibe & relax into your study groove</p>
+
+  <div class="room-buttons" id="roomButtons">
+    <button data-room="library" class="active">📚 Library</button>
+    <button data-room="rain">🌧️ Rain</button>
+    <button data-room="cafe">☕ Café</button>
+    <button data-room="forest">🌲 Forest</button>
+    <button data-room="ocean">🌊 Ocean</button>
+    <button data-room="fireplace">🔥 Fireplace</button>
+  </div>
+
+  <div class="controls">
+    <img src="/notes/assest/fe4c2c1662b57be34b68cf4dffc04060.jpg" class="bg">
+    <div class="full">
+   <div class="but">
+      <button id="playBtn">▶️ Play</button>
+    <button id="pauseBtn">⏸️ Pause</button><br><br>
+  </div>
+
+  <div class="vol">
+    Volume: <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="50">
+    <span id="volumeValue">50%</span></div>
+  </div>
+</div>  
+  <div class="timer">
+    <div id="timerDisplay">25:00</div>
+    <div class="timer-buttons">
+      <button onclick="setTimer(25)">25 min</button>
+      <button onclick="setTimer(45)">45 min</button>
+      <button onclick="setTimer(60)">60 min</button>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <audio id="audio" loop></audio>
+        </div>
+    </div>
+<script src="notes.js"></script>
+</body>
+</html>
